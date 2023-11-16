@@ -221,7 +221,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1375,7 +1375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa0ebc027edfa84fb6355e4797b3082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 10
+  _moveSpeed: 8
   _rotateSpeed: 10
   _gravityForce: 20
 --- !u!143 &950466002
@@ -1413,7 +1413,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950465998}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: df1ce8e77bab2c04a81323095c9bc7c2, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 27fffc74ca8d9874c8e32f44a9d87c80, type: 3}
   m_Controller: {fileID: 9100000, guid: 4d3bcd6764be40445b066a5e587c501c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -1431,6 +1431,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1258384596}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &950466005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950465998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff219d5915285f4ba2c55082b8fb898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 950466003}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2002,6 +2015,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 950466003}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b2a27485984162849b36a71c85bc8812,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 950466005}
   m_SourcePrefab: {fileID: 100100000, guid: b2a27485984162849b36a71c85bc8812, type: 3}
 --- !u!1 &1450066663
 GameObject:
@@ -2596,10 +2613,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1933018387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bff219d5915285f4ba2c55082b8fb898, type: 3}
+  m_Script: {fileID: 11500000, guid: cb6ff7fc4fd3bf941b6100f95e6253dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 950466003}
+  _attack: {fileID: 950466005}
 --- !u!1 &1943107535
 GameObject:
   m_ObjectHideFlags: 0
