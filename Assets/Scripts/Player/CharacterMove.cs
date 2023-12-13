@@ -24,6 +24,7 @@ public class CharacterMove : MonoBehaviour
 
     void Start()
     {
+        
         _characterController = GetComponent<CharacterController>();
         _animator = GetComponent<Animator>();
     }

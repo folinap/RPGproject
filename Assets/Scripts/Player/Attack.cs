@@ -7,6 +7,7 @@ public class Attack : MonoBehaviour
     private float  animExitTime = 0.75f;
     int attackCount = 0;
 
+    
     public void ComboAttack()
     {
         if (!IsAnimationPlaying("Attack State.Third Attack"))
